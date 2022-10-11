@@ -44,7 +44,7 @@ generateBtn.addEventListener("click", () =>{
     generateBtn.style.cursor="no-drop";
     generateBtn.style.opacity= "0.7";
 
-    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${}`;
+    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`; //Passes the {qrValue}
 
     qrImg.addEventListener("load", () =>{
         wrapper.classList.add("active");
